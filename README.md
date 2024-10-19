@@ -12,7 +12,7 @@
   <p><em>Figure 1: PaPaGei-S Overview. Before training, for each PPG segment we compute the morphology metrics IPA, SVRI, and SQI, to be used as objectives (left). Next, we pass raw PPG signals through the encoder (E), to extract embeddings (middle) and feed them into three heads (right): the projection head (P) contrasts similar and dissimilar PPG signals based on sVRI, while two mixture-of-expert heads (M_1 and M_2) refine the embeddings by predicting IPA and SQI values, respectively.</em></p>
 </div>
 
-## :chart_with_upwards_trend: How to use (model available Soon)
+## :chart_with_upwards_trend: How to use (model available soon)
 
 #### Extracting embeddings
 
