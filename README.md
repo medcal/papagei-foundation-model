@@ -12,7 +12,7 @@
   <p><em>Figure 1: PaPaGei-S Overview. Before training, for each PPG segment we compute the morphology metrics IPA, SVRI, and SQI, to be used as objectives (left). Next, we pass raw PPG signals through the encoder (E), to extract embeddings (middle) and feed them into three heads (right): the projection head (P) contrasts similar and dissimilar PPG signals based on sVRI, while two mixture-of-expert heads (M_1 and M_2) refine the embeddings by predicting IPA and SQI values, respectively.</em></p>
 </div>
 
-## :chart_with_upwards_trend: Usage (Available Soon)
+## :chart_with_upwards_trend: How to use (model available Soon)
 
 #### Extracting embeddings
 
@@ -87,7 +87,7 @@ with torch.inference_mode():
 print(f"Embedding dimensions : {embeddings.shape}")
 ```
 
-## Brief descriptions of useful files
+## Brief description of important modules
 
 We describe the end-to-end workflow below.
 
@@ -100,7 +100,7 @@ The code required to preprocess the raw PPG signal is in the ```preprocessing```
 
 ```segmentations.py``` contains the code needed to segment the filtered PPG signal:
 - ```waveform_to_segment```: Function to segment signal based on segment length
-- Other utilies for saving segments.
+- Other utilities for saving segments.
 
 #### Step 2: Morphology Augmentation Module Computation
 
@@ -113,7 +113,7 @@ The code required to preprocess the raw PPG signal is in the ```preprocessing```
 
 #### Step 3: Dataset and Time series Augmentations
 
-- ```dataset.py```: The ```PPGDatasetLabelsArray``` is a PyTorch custom dataset class that is used in PaPaGei-S. Note that the dataloader is created prior to training in ```training_mt.py```.
+- ```dataset.py```: The ```PPGDatasetLabelsArray``` is a PyTorch custom dataset class that is used in PaPaGei-S. Note that the dataloader is created before training in ```training_mt.py```.
 - ```augmentations.py```: Contains time series augmentation code as ```torch.nn.Module``` classes for easier on the fly transforms. 
 
 #### Step 4: Training
