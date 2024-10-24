@@ -1,8 +1,7 @@
 # :parrot: PaPaGei: Open Foundation Models for Optical Physiological Signals
 
 ## :rocket: Updates
-- Oct 24th 2024: Models are now available [here](https://zenodo.org/records/13983110)
-- Oct 17th 2024: **Models will be released soon**
+- Oct 24th 2024: Visit Arvind's page on Zenodo to access the models [here](https://zenodo.org/records/13983110)
 - Oct 15th 2024: The paper and code are now available! 
   
 ## :book: Introduction
