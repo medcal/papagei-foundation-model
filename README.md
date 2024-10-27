@@ -1,27 +1,40 @@
-# :parrot: PaPaGei: Open Foundation Models for Optical Physiological Signals
+<div id="toc">
+   <ul align="center" style="list-style: none;">
+  <a href="[https://github.com/evelyn0414/OPERA](https://github.com/Nokia-Bell-Labs/papagei-foundation-model"> <img width="200px" height="200px" src="figures/papagei-logo.png"></a>
+  <summary>
+     <h1>PaPaGei</h1> <br>
+    <h2> Open Foundation Models for Optical Physiological Signals </h2>
+  </summary>
+   </ul>
+</div>
+
 
 ## :rocket: Updates
 - Oct 25th 2024: The paper will be available on Arxiv shortly.
 - Oct 24th 2024: Visit Arvind's page on Zenodo ([here](https://zenodo.org/records/13983110)) to access the models!
 - Oct 15th 2024: The code is now available! 
   
-## :book: Introduction
-*Abstract*: Photoplethysmography (PPG) is the most widely used non-invasive technique for monitoring biosignals and cardiovascular health, with applications in both clinical settings and consumer health through wearable devices. Current machine learning models trained on PPG signals are mostly task-specific and lack generalizability. Previous works often used single-device datasets, did not explore out-of-domain generalization, or did not release their models, hindering reproducibility and further research. We introduce PaPaGei, the first open foundation model for PPG signals. PaPaGei is pre-trained on more than 57,000 hours of 20 million unlabeled segments of PPG signals using publicly available datasets exclusively. We evaluate against popular time-series foundation models and other benchmarks on 20 tasks of 10 diverse datasets spanning cardiovascular health, sleep disorders, pregnancy monitoring, and wellbeing assessment. Our architecture incorporates novel representation learning approaches that leverage differences in PPG signal morphology across individuals, enabling it to capture richer representations than traditional contrastive learning methods. Across 20 tasks, PaPaGei improves classification and regression performance by an average of 6.3\% and 2.9\%, respectively, compared to other competitive time-series foundation models in at least 14 tasks. PaPaGei is more data- and parameter-efficient than other foundation models or methods, as it outperforms 70x larger models. Beyond accuracy, we also investigate robustness against different skin tones, establishing a benchmark for bias evaluations of future models. Notably, PaPaGei can be used out of the box as both a feature extractor and an encoder for other multimodal models, opening up new opportunities for multimodal health monitoring.
+## :book: Summary
+Photoplethysmography (PPG) is the most widely used non-invasive technique for monitoring biosignals and cardiovascular health, with applications in both clinical settings and consumer health through wearable devices. Current machine learning models trained on PPG signals are mostly task-specific and lack generalizability. Previous works often used single-device datasets, did not explore out-of-domain generalization, or did not release their models, hindering reproducibility and further research. We introduce PaPaGei, **the first open foundation model for PPG signals**. PaPaGei is **pre-trained on more than 57,000 hours** of 20 million unlabeled segments of PPG signals using publicly available datasets exclusively. We evaluate against popular time-series foundation models and other benchmarks on **20 tasks of 10 diverse datasets spanning cardiovascular health, sleep disorders, pregnancy monitoring, and wellbeing assessment**. Our architecture incorporates novel representation learning approaches that leverage differences in PPG signal morphology across individuals, enabling it to **capture richer representations** than traditional contrastive learning methods. Across 20 tasks, PaPaGei improves classification and regression performance by an average of 6.3\% and 2.9\%, respectively, compared to other competitive time-series foundation models in at least 14 tasks. **PaPaGei is more data- and parameter-efficient than other foundation models or methods**, as it outperforms 70x larger models. Beyond accuracy, we also investigate robustness against different skin tones, establishing a benchmark for bias evaluations of future models. Notably, PaPaGei can be used out of the box as both a **feature extractor** and an **encoder** for other multimodal models, opening up new opportunities for multimodal health monitoring.
 
 <div align="center">
-  <img src="figures/PaPaGei.png" alt="Project Screenshot" width="600"/>
-  <p><em>Figure 1: PaPaGei-S Overview. Before training, for each PPG segment we compute the morphology metrics IPA, SVRI, and SQI, to be used as objectives (left). Next, we pass raw PPG signals through the encoder (E), to extract embeddings (middle) and feed them into three heads (right): the projection head (P) contrasts similar and dissimilar PPG signals based on sVRI, while two mixture-of-expert heads (M_1 and M_2) refine the embeddings by predicting IPA and SQI values, respectively.</em></p>
+  <img src="figures/model-overview.png" alt="Project Screenshot"/>
 </div>
 
 ## :chart_with_upwards_trend: How to use
 
+PaPaGei can be useful in multiple ways:
+
+1. Developers and researchers can use it out-of-the-box to extract transferrable features for ML (instead of handcrafted features).
+2. It can also be used as a PPG encoder that plugs into other powerful frontier models (LLMs such as [AnyMAL](https://arxiv.org/abs/2309.16058) etc).
+
 #### Downloading the model weights
 
-To access the model weights, download it from [Zenodo](https://zenodo.org/records/13983110) hosted by [Arvind Pillai](https://arvindpillai.io/). For feature extraction, save it in a folder called ```weights``` (or) change the path when loading.
+To access the model weights, you can download them from [Zenodo](https://zenodo.org/records/13983110) hosted by [Arvind Pillai](https://arvindpillai.io/). For feature extraction, please save it in a folder called ```weights``` and/or change the path when loading.
 
 #### Extracting embeddings
 
-A quick example demonstrating how to extract embeddings from the encoder.
+A quick example demonstrating how to extract embeddings from the encoder:
 
 1. Import the necessary packages
 ```python
@@ -94,6 +107,10 @@ print(f"Embedding dimensions : {embeddings.shape}")
 
 ## Brief description of important modules
 
+<div align="center">
+  <img src="figures/PaPaGei.png" alt="Project Screenshot"/>
+</div>
+
 We describe the end-to-end workflow below.
 
 #### Step 1: PPG Data Pre-processing
@@ -141,7 +158,7 @@ The saved embeddings from Step 5 can be passed to a linear model or shallow ANN 
 
 ## :file_folder: Other Repositories
 
-We would like to extend our gratitude to the following repositories for their invaluable contributions to our work, as well as many others that have supported our research:
+We gratefully acknowledge the work from the following projects that made the evaluation of our model possible:
 
 - **[Chronos](https://github.com/amazon-science/chronos-forecasting)**
 - **[Moment](https://github.com/moment-timeseries-foundation-model/moment?tab=readme-ov-file)**
