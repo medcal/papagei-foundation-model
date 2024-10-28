@@ -1,6 +1,6 @@
 <div id="toc">
    <ul align="center" style="list-style: none;">
-  <a href="[https://github.com/evelyn0414/OPERA](https://github.com/Nokia-Bell-Labs/papagei-foundation-model"> <img width="200px" height="200px" src="figures/papagei-logo.png"></a>
+  <a href="[https://github.com/evelyn0414/OPERA](https://github.com/Nokia-Bell-Labs/papagei-foundation-model"> <img width="20%" height="20%" src="figures/papagei-logo.png"></a>
   <summary>
      <h1>PaPaGei</h1> <br>
     <h2> Open Foundation Models for Optical Physiological Signals </h2>
