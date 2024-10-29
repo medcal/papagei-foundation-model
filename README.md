@@ -10,7 +10,7 @@
 
 
 ## :rocket: Updates
-- Oct 25th 2024: The paper will be available on Arxiv shortly.
+- Oct 29th 2024: The paper is available on [Arxiv](https://arxiv.org/abs/2410.20542).
 - Oct 24th 2024: Visit Arvind's page on Zenodo ([here](https://zenodo.org/records/13983110)) to access the models!
 - Oct 15th 2024: The code is now available! 
   
@@ -167,3 +167,13 @@ We gratefully acknowledge the work from the following projects that made the eva
 - **[BYOL](https://github.com/chengding0713/SiamQuality/tree/main)** 
 - **[Morphology](https://github.com/qiriro/PPG)** 
 
+## Citation
+If you use models, code, or ideas from this project, please cite our paper:
+```bibtex
+@misc{pillai2024papagei,
+      title={PaPaGei: Open Foundation Models for Optical Physiological Signals}, 
+      author={Arvind Pillai and Dimitris Spathis and Fahim Kawsar and Mohammad Malekzadeh},
+      year={2024},
+      url={https://arxiv.org/abs/2410.20542}, 
+}
+```
