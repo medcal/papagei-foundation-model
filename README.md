@@ -168,7 +168,7 @@ We gratefully acknowledge the work from the following projects that made the eva
 - **[Morphology](https://github.com/qiriro/PPG)** 
 
 ## Citation
-If you use models, code, or ideas from this project, please cite our paper:
+If you use models, code, or ideas from this project, please cite our [paper](https://arxiv.org/abs/2410.20542):
 ```bibtex
 @misc{pillai2024papagei,
       title={PaPaGei: Open Foundation Models for Optical Physiological Signals}, 
