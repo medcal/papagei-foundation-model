@@ -105,6 +105,8 @@ with torch.inference_mode():
 print(f"Embedding dimensions : {embeddings.shape}")
 ```
 
+An example notebook describing end-to-end feature extraction and downstream evaluation on the ppg-dataset is available [here](https://github.com/arvind1609/papagei-foundation-model/blob/19eb1957480b67182988cbc64c78cff822a452a9/example_papagei.ipynb).
+
 ## Brief description of important modules
 
 <div align="center">
