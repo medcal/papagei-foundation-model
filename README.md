@@ -28,6 +28,12 @@ PaPaGei can be useful in multiple ways:
 1. Developers and researchers can use it out-of-the-box to extract transferrable features for ML (instead of handcrafted features).
 2. It can also be used as a PPG encoder that plugs into other powerful frontier models (LLMs such as [AnyMAL](https://arxiv.org/abs/2309.16058) etc).
 
+#### Installation 
+
+1. Create a conda environment: ```conda create -n papagei_env python==3.10```
+2. Install the required packages in the environment: ```pip install -r requirements.txt ```
+3. Install the pyPPG package: ```pip install pyPPG==1.0.41``` (While this may result in wfdb package conflict, it will still work).
+
 #### Downloading the model weights
 
 To access the model weights, you can download them from [Zenodo](https://zenodo.org/records/13983110) hosted by [Arvind Pillai](https://arvindpillai.io/). For feature extraction, please save it in a folder called ```weights``` and/or change the path when loading.
