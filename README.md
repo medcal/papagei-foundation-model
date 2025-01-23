@@ -10,6 +10,8 @@
 
 
 ## :rocket: Updates
+- Jan 22nd 2025: PaPaGei is accepted to the International Conference on Learning Representations (ICLR) 2025
+- Dec 15th 2024: PaPaGei recevied Best Paper Award 🏆 at NeurIPS 2024 workshop on Time Series in the Age of Large Models (TSALM)
 - Oct 29th 2024: The paper is available on [Arxiv](https://arxiv.org/abs/2410.20542).
 - Oct 24th 2024: Visit Arvind's page on Zenodo ([here](https://zenodo.org/records/13983110)) to access the models!
 - Oct 15th 2024: The code is now available! 
