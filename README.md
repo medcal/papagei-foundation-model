@@ -113,7 +113,7 @@ with torch.inference_mode():
 print(f"Embedding dimensions : {embeddings.shape}")
 ```
 
-An example notebook describing end-to-end feature extraction and downstream evaluation on the ppg-bp dataset is available [here](https://github.com/Nokia-Bell-Labs/papagei-foundation-model/blob/main/example_papagei.ipynb).
+An example notebook describing end-to-end feature extraction and downstream evaluation on the ppg-bp dataset is available [here](https://github.com/Nokia-Bell-Labs/papagei-foundation-model/blob/main/example_papagei.ipynb). Some limitations of this work should be noted. First, there is not single model that is best across all tasks and datasets, thus we release the models with the most wins. Second, instead of fixed random seeds, we bootstrap the predictions 500 times to compute the 95% CI providing a performance range. 
 
 ## Brief description of important modules
 
