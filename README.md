@@ -231,12 +231,14 @@ We gratefully acknowledge the contributions of the following projects, which wer
 If you use PaPaGei models, code, or ideas from this project in your research, please cite our paper:
 
 ```bibtex
-@misc{pillai2024papagei,
-      title={PaPaGei: Open Foundation Models for Optical Physiological Signals},
-      author={Arvind Pillai and Dimitris Spathis and Fahim Kawsar and Mohammad Malekzadeh},
-      year={2024},
-      eprint={2410.20542},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={[https://arxiv.org/abs/2410.20542](https://arxiv.org/abs/2410.20542)},
+@inproceedings{pillai2025papagei,
+  title={{PaPaGei: Open Foundation Models for Optical Physiological Signals}},
+  author={Arvind Pillai and Dimitris Spathis and Fahim Kawsar and Mohammad Malekzadeh},
+  booktitle={The Thirteenth International Conference on Learning Representations, {ICLR} 2025},
+  year={2025},
+  month={April},
+  address={Singapore},
+  note={Accepted. arXiv preprint arXiv:2410.20542},
+  url={[https://arxiv.org/abs/2410.20542](https://arxiv.org/abs/2410.20542)}
 }
+
