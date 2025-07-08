@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/Nokia-Bell-Labs/papagei-foundation-model">
-    <img width="25%" height="25%" src="figures/papagei-logo.png" alt="PaPaGei Logo">
+    <img width="20%" height="250%" src="figures/papagei-logo.png" alt="PaPaGei Logo">
   </a>
   <h1>PaPaGei</h1>
   <h2>Open Foundation Models for Optical Physiological Signals</h2>
